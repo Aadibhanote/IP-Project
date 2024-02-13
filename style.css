@@ -1,0 +1,88 @@
+body{
+    background-color: #E3E6F3;
+    padding: 10 px;
+    background-image: url('https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-3591.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+ul{
+    margin:5px;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    display:inline-block;
+    padding: 10px 15px;
+   
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+li:hover{
+    background-color: rgba(255, 255, 0, 0.808);
+}
+li:hover a{
+    color:black;
+}
+@media(max-width:450px){
+    li{
+        display: block;
+        padding-left: 25px;
+        border-bottom: 2px solid black;
+    }
+}
+div1{
+    display: flex;
+     float: right;
+}
+
+div3 span1{
+        color: black;
+        font-size: 60px;
+        
+    }
+    div3 span{
+        color: black;
+    } 
+
+    .Details{
+        border: 1px solid black;
+        display:inline-block;
+        padding: 10px 15px;
+    }
+    .Details:hover{
+        background-color: rgba(255, 255, 0, 0.808);
+    }
+    }
+    .Details:hover a{
+        color:black;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+       
+        }
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            box-shadow: 0 5px 15px rgba(0,0,00.06);
+            height:10px;
+            max-width: 80%;
+        margin: auto;
+        padding: 1.4rem 1rem;
+        background-color: #000000b5;
+        backdrop-filter: blur(10px);
+        border-radius: 3rem;
+        margin-top: 1rem;
+
+        }
+        img{
+            height: 45px;
+            width: 45px;
+        }
