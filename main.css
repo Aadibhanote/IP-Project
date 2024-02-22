@@ -7,82 +7,76 @@ body{
     background-repeat: no-repeat;
     height:100vh;
 }
+nav{
+    height:90px;
+    width:100%;
+    background-color: rgb(12, 25, 44);
+    display:flex;
+    justify-content: space-around;
+    position: absolute;
+    top:20px;
+    align-items: center;
+    z-index: 1;
 
-ul{
-    margin:5px;
-    padding: 0;
+}
+.navbutton{
     list-style-type: none;
-}
-li{
-    display:inline-block;
-    padding: 10px 15px;
-   
-}
-a{
-    text-decoration: none;
     color:white;
 }
-li:hover{
-    background-color: rgba(255, 255, 0, 0.808);
+.search{
+    height:20px;
 }
-li:hover a{
-    color:black;
+a{
+    color:white;
+    list-style-type: none;
+    
 }
-@media(max-width:450px){
-    li{
-        display: block;
-        padding-left: 25px;
-        border-bottom: 2px solid black;
-    }
+#logo{
+    height:50px;
+    width:50px;
+    position:relative;
+    z-index: 2;
 }
-div1{
-    display: flex;
-     float: right;
+.daily{
+    position:relative;
+    top:130px;
+    left:350px;
+    height:300px;
+    width:70%;
+    background-color: black;
 }
 
-div3 span1{
-        color: black;
-        font-size: 60px;
-        
-    }
-    div3 span{
-        color: black;
-    } 
+.ontop{
+    background-image:url(https://images.hindustantimes.com/tech/img/2023/09/18/960x540/kjhg_1694543778952_1695033896493.png);
+    background-size:contain;
+    position:absolute;
+    top:70px;
+    left:220px;
+    height:220px;
+    width:70%;
+    z-index:2;
+}
+.infod{
+    color:white;
+    position:relative;
+    top:80px;
+    left:30px;
+    font-size:x-large;
+    z-index:1;
+}
+.sidebar{
+    background-color: rgb(88, 120, 121);
+height:700px;
+width:300px;
+position:relative;
+bottom:185px;
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 
-    .Details{
-        border: 1px solid black;
-        display:inline-block;
-        padding: 10px 15px;
-    }
-    .Details:hover{
-        background-color: rgba(255, 255, 0, 0.808);
-    }
-    }
-    .Details:hover a{
-        color:black;
-    }
-    img{
-        height: 150px;
-        width: 150px;
-       
-        }
-        #header{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 80px;
-            box-shadow: 0 5px 15px rgba(0,0,00.06);
-            height:10px;
-            max-width: 80%;
-        margin: auto;
-        padding: 1.4rem 1rem;
-        background-color: #000000b5;
-        backdrop-filter: blur(10px);
-        border-radius: 3rem;
-        margin-top: 1rem;
+}
 
-        }
-        img{
-            height: 45px;
-            width: 45px;
-        }
+
+
+
