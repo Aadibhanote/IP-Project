@@ -1,7 +1,7 @@
 body{
     background-color: #E3E6F3;
     padding: 10 px;
-    background-image: url('https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-3591.jpg');
+    /* background-image: url('https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-3591.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +16,8 @@ nav{
     position: absolute;
     top:20px;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
+    position:fixed;   /*    for making navbar stable      */
 
 }
 .navbutton{
@@ -35,7 +36,7 @@ a{
     height:50px;
     width:50px;
     position:relative;
-    z-index: 2;
+    z-index: 1;
 }
 .daily{
     position:relative;
@@ -44,6 +45,7 @@ a{
     height:300px;
     width:70%;
     background-color: black;
+    z-index:1;
 }
 
 .ontop{
@@ -76,7 +78,71 @@ flex-direction: column;
 justify-content: space-evenly;
 
 }
+#p1{
+    height:300px;                       /* images length*/
+    width:300px;
+   
+}
+.col1{
+    position:absolute;
+    left:420px;
+    top:500px;
+ text-align: center;
+ 
 
 
+}
+.addcart{
+background-color: black;
+color:white;
+position:relative;
+bottom:60px;
+height:40px;
 
+}
+.infop1{
+    position:relative;
+    top:23px;
+    bottom:60px;
+height:40px;
+background-color: rgb(234, 230, 226);
+}
+#p2{
+    height:300px;                       /* images length*/
+    width:300px;
+    
+    
+}
+.infop2{
+    position:relative;
+    top:23px;
+    bottom:60px;
+    height:40px;
+background-color: rgb(234, 230, 226);
 
+}
+.col2{
+    position:absolute;
+    left:800px;
+    top:500px;
+ text-align: center;
+}
+#p3{
+    height:300px;                       /* images length*/
+    width:300px;
+   
+}
+.infop3{
+    position:relative;
+    top:23px;
+    bottom:60px;
+    height:40px;
+background-color: rgb(234, 230, 226);
+}
+.col3{
+    position:absolute;
+    left:1200px;
+    top:500px;
+ text-align: center;
+ 
+}
