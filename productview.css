@@ -1,0 +1,66 @@
+a{
+    color:black;
+    list-style-type: none;
+    
+}
+.imgp{
+    width:700px;
+    height:1000px;
+    position:absolute;
+    top:100px;
+    right:1100px;
+}
+.info{
+    background-color: rgb(241, 236, 236);
+width:800px;
+height:1000px;
+    position:absolute;
+    top:180px;
+    right:30px;
+
+
+}
+.hinfo{
+    font-size:xxx-large;
+    position:relative;
+    top:20px;
+    left:40px;
+}
+.pinfo{
+    position:relative;
+    top:80px;
+    left:20px;
+    font-size: x-large;
+    
+}
+.aboutitem{
+
+    position:relative;
+    top:80px;
+    left:30px;
+    
+}
+.buy{
+    height:40px;
+    width:500px;
+    background-color: yellow;
+    position:absolute;
+    bottom:180px;
+    right:200px;
+    border-radius:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    height:40px;
+    width:500px;
+    background-color: yellow;
+    position:absolute;
+    bottom:120px;
+    right:200px;
+    border-radius:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
