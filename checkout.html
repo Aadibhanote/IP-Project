@@ -1,80 +1,171 @@
+<!DOCTYPE html> 
+<html> 
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="checkout.css"> 
-</head>
-<body>
-    <div class="container">
-        <h1>Billing Details</h1>
-        <div id="order-summary">
-        </div>
-        <form id="checkout-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea><br>
-            <label for="payment-method">Payment Method:</label>
-            <br>
-            <select id="payment-method" name="payment-method" required>
-                <option value="credit-card">Credit Card</option>
-                <option value="upi">UPI</option>
-                <br>
-                <option value="cash on delivery">Cash On Delivery</option>
-            </select><br>
-            <div id="credit-card-details" class="payment-details">
-                <br>
-                <label for="card-number">Credit Card Number:</label>
-                <input type="text" id="card-number" name="card-number" required><br>
-                <label for="expiry">Expiry Date:</label>
-                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required><br>
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" required><br>
-            </div>
-            <div id="upi-details" class="payment-details" style="display: none;">
-                <br>
-                <label for="upi-id">UPI ID:</label>
-                <input type="text" id="upi-id" name="upi-id"><br>
-            </div>
-            <div id="cash on delivery" class="cash on delivery" style="display: none;">
-                <!-- PayPal details can be added here -->
-            </div>
-            <br>
-            <button type="submit">Place Order</button>
-        </form>
-    </div>
+<head> 
+	<title>Checkout Page</title> 
+	<link rel="stylesheet"
+		type="text/css"
+		href="checkout.css"> 
+</head> 
+<style> 
+	body { 
+		background-color: #ffffff; 
+		font-family: Arial, sans-serif; 
+	} 
+	
+	header { 
+		background-color: #07cddb; 
+		color: #ffffff; 
+		padding: 20px; 
+	} 
+	
+	nav ul { 
+		margin: 0; 
+		padding: 0; 
+		list-style: none; 
+	} 
+	
+	nav li { 
+		display: inline-block; 
+		margin-right: 20px; 
+	} 
+	
+	nav a { 
+		color: #ffffff; 
+		text-decoration: none; 
+	} 
+	
+	nav a:hover { 
+		text-decoration: underline; 
+	} 
+	
+	section { 
+		max-width: 600px; 
+		margin: 0 auto; 
+		padding: 20px; 
+	} 
+	
+	h1 { 
+		color: #07cddb; 
+		font-size: 32px; 
+		margin-bottom: 20px; 
+	} 
+	
+	h2 { 
+		color: #07cddb; 
+		font-size: 24px; 
+		margin-bottom: 10px; 
+	} 
+	
+	label { 
+		display: block; 
+		margin-bottom: 5px; 
+		color: #666666; 
+	} 
+	
+	input[type="text"], 
+	input[type="email"] { 
+		width: 100%; 
+		padding: 10px; 
+		border: 1px solid #cccccc; 
+		border-radius: 5px; 
+		margin-bottom: 10px; 
+		font-size: 16px; 
+	} 
+	
+	input[type="submit"] { 
+		background-color: #07cddb; 
+		color: #ffffff; 
+		padding: 10px 20px; 
+		border: none; 
+		border-radius: 5px; 
+		font-size: 16px; 
+		cursor: pointer; 
+	} 
+	
+	input[type="submit"]:hover { 
+		background-color: #07cddb; 
+	} 
+	
+	footer { 
+		background-color: #07cddb; 
+		color: #ffffff; 
+		padding: 20px; 
+		text-align: center; 
+	} 
+	
+</style> 
 
-    <script>
-        document.getElementById("payment-method").addEventListener("change", function() {
-            var paymentMethod = this.value;
-            var paymentDetails = document.getElementsByClassName("payment-details");
-            for (var i = 0; i < paymentDetails.length; i++) {
-                paymentDetails[i].style.display = "none";
-            }
-            document.getElementById(paymentMethod + "-details").style.display = "block";
-        });
+<body> 
+	
 
-        document.getElementById("checkout-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            // Perform validation
-            var paymentMethod = document.getElementById("payment-method").value;
-            if (paymentMethod === "credit-card") {
-                // Implement credit card payment processing logic here
-                alert("Order placed successfully! Payment method: Credit Card");
-            } else if (paymentMethod === "upi") {
-                var upiId = document.getElementById("upi-id").value;
-                // Implement UPI payment processing logic here
-                alert("Order placed successfully! Payment method: UPI, UPI ID: " + upiId);
-            } else if (paymentMethod === "cash on delivery") {
-                // Implement PayPal payment processing logic here
-                alert("Order placed successfully! Payment method: PayPal");
-            }
-        });
-    </script>
-</body>
+	<section> 
+		<h1>Checkout</h1> 
+		<form action="thanks.php" method="post"> 
+			<h2>Billing Information</h2> 
+			<label for="name">Name:</label> 
+			<input type="text"
+				id="name"
+				name="name" required> 
+
+			<label for="email">Email:</label> 
+			<input type="email"
+				id="email"
+				name="email" required> 
+
+			<label for="address">Address:</label> 
+			<input type="text"
+				id="address"
+				name="address" required> 
+
+			<label for="city">City:</label> 
+			<input type="text"
+				id="city"
+				name="city" required> 
+
+			<label for="state">State:</label> 
+			<input type="text"
+				id="state"
+				name="state" required> 
+
+			<label for="zip">Zip Code:</label> 
+			<input type="text"
+				id="zip"
+				name="zip" required> 
+
+			<h2>Payment Information</h2> 
+			<label for="cardholder">Name on Card:</label> 
+			<input type="text" id="cardholder"
+				name="cardholder" required> 
+
+			<label for="cardnumber">Card Number:</label> 
+			<input type="text"
+				id="cardnumber"
+				name="cardnumber" required 
+				pattern="\d{4}-?\d{4}-?\d{4}-?\d{4}" required=> 
+
+
+			<label for="expmonth">Expiration Month:</label> 
+			<input type="text"
+				id="expmonth"
+				name="expmonth" required> 
+
+			<label for="expyear">Expiration Year:</label> 
+			<input type="text"
+				id="expyear"
+				name="expyear" required> 
+
+			<label for="cvv">CVV:</label> 
+			<input type="text"
+				id="cvv"
+				name="cvv" required> 
+
+			<input type="submit"
+				value="Place Order"> 
+		</form> 
+	</section> 
+
+	
+</body> 
+
 </html>
