@@ -1,18 +1,17 @@
-.cart-page {
+.cart-page{
     margin: 80px auto;
 }
 
-table {
+table{
     width: 100%;
     border-collapse: collapse;
 }
-
-.cart-info {
+.cart-info{
     display: flex;
     flex-wrap: wrap;
 }
 
-th {
+th{
     text-align: left;
     padding: 5px;
     color: #fff;
@@ -20,48 +19,45 @@ th {
     font-weight: normal;
 }
 
-td {
+td{
     padding: 10px 5px;
 }
 
-td input {
+td input{ 
     width: 40px;
     height: 30px;
     padding: 5px;
 }
-
-td a {
-    color: #07cddb;
+td a{
+    color:#07cddb;
     font-size: 10px;
 }
 
-td img {
+td img{
     width: 80px;
     height: 80px;
     margin-right: 10px;
 }
 
-.total-price {
+.total-price{
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px; /* Add margin to separate from the table */
 }
-
-.total-price table {
+.total-price table{
     border-top: 3px solid #07cddb;
-    width: 100%;
-    max-width: 350px;
+    width:100%;
+    max-width:350px;
 }
 
-td:last-child {
+td:last-child{
     text-align: right;
 }
 
-th:last-child {
+th:last-child{
     text-align: right;
 }
 
- a.submit{
+a.submit{
     color: rgb(88, 148, 88);
     border: none;
     padding: 10px 20px;
