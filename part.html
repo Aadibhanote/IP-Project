@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="part.css">
+</head>
+<body>
+    
+
+    <h1 style="text-align:center"> Our Team Members </h1>
+    <br>
+    <div class="row">
+      <div class="column1">
+        <div class="card">
+          <img src="aadi.jpg" alt="aadi" style="width:100%">
+          <div class="container">
+            <h2>Aadityendra Singh Bhanote</h2>
+            <p class="title">Frontend Developer</p>
+      
+            <p>aadityendra1004.be23@chitkarauniversity.edu.in</p>
+            <p>7888782253</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column2">
+        <div class="card">
+          <img src="abhi.jpg" alt="abhishek" style="width:100%">
+          <div class="container">
+            <h2>Abhishek</h2>
+            <p class="title">Backend Developer</p>
+          
+            <p>abhishek1026.be23@chitkarauniversity.edu.in</p>
+            <p>8628969415</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column3">
+        <div class="card">
+          <img src="aashray.jpg" alt="aashray" style="width:100%">
+          <div class="container">
+            <h2>Aashray Narang</h2>
+            <p class="title">Content Creater</p>
+          
+            <p>aashray1011.be23@chitkarauniversity.edu.in</p>
+            <p>7714316253</p>
+          </div>
+        </div>
+      </div>
+      <div class="column4">
+          <div class="card">
+            <img src="areen.jpg" alt="areen" style="width:100%">
+            <div class="container">
+              <h2>Areen Kalra</h2>
+              <p class="title">Graphic Designer</p>
+      
+              <p>areen1106.be23@chitkarauniversity.edu.in</p>
+              <p>7404936201</p>
+              
+            </div>
+          </div>
+        </div>
+       
+    </div>
+<h1>Some Words by our team members</h1>
+    <div class="quote-slideshow">
+        <div class="myQuotes fade">
+          <p><h2>&nbsp;&nbsp;"I have apply my page designing skills on this website and I made all efforts to look website beautiful by applying my css skills"-Aadityendra Singh Bhanote</h2></p>
+        </div>
+      
+        <div class="myQuotes fade">
+          <p><h2>&nbsp;&nbsp;"I created strong backend development for this project hope you like it"-Abhishek</h2></p>
+        </div>
+      
+        <div class="myQuotes fade">
+          <p><h2>&nbsp;&nbsp;"I create content for this website"-Aashray Narang</h2></p>
+        </div>
+        <div class="myQuotes fade">
+          <p><h2>&nbsp;&nbsp;"I have designed this website"-Areen Kalra</h2></p>
+        </div>
+      </div>
+
+      <script>
+        var quoteIndex = 0;
+        showQuotes();
+        
+        function showQuotes() {
+          var i;
+          var quotes = document.getElementsByClassName("myQuotes");
+          for (i = 0; i < quotes.length; i++) {
+            quotes[i].style.display = "none";  
+          }
+          quoteIndex++;
+          if (quoteIndex > quotes.length) {quoteIndex = 1}    
+          quotes[quoteIndex-1].style.display = "block";  
+          setTimeout(showQuotes, 5000); // Change quote every 6 seconds
+        }
+        </script>
+</body>
+</html>
